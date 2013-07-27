@@ -10,22 +10,21 @@ body {
 	padding: 0px;
 	}
 
-strong {
-	font-weight: 600;
-	}
-
 img {
 	border: none;
 	}
 
-h1 {
-	font: 20pt Trebuchet MS;
+h1, h2, h3 {
+	font-family: "Trebuchet MS", Arial, sans;
 	margin: 0;
 	}
 
-h2 {
-	font: 16pt Trebuchet MS;
-	margin: 0;
+h1, h2 {
+	font-size: 27px;
+	}
+
+h3 {
+	font-size: 21px;
 	}
 
 .wrapper {
@@ -60,22 +59,24 @@ h2 {
 	color: #444;
 	}
 
-a.plain {
-	text-decoration: none;
+.red {
+	color: #D40000;
+	}
+
+a {
 	color: inherit;
 	}
 
-.lt-ie8 a.plain {
+.lt-ie8 {
 	color: #444;
+	}
+
+a.plain {
+	text-decoration: none;
 	}
 
 a.hidden {
 	text-decoration: none;
-	color: inherit;
-	}
-
-.lt-ie8 a.hidden {
-	color: #444;
 	}
 
 a.hidden:hover {
@@ -194,8 +195,8 @@ ul.horizontal li {
 			}
 
 	#title {
-		font-family: Trebuchet MS;
-		font-size: 20pt;
+		font-family: "Trebuchet MS", Arial, sans;
+		font-size: 27px;
 		text-align: right;
 		}
 
@@ -314,7 +315,7 @@ ul.horizontal li {
 			}
 
 		#cv ul {
-			line-height: 22pt;
+			line-height: 29px;
 			list-style: none;
 			/*margin-left: 0;*/
 			}
@@ -404,7 +405,7 @@ ul.horizontal li {
 						}
 
 				#studies .copyright {
-					font-size: 10pt;
+					font-size: 13px;
 					}
 
 	#links {
@@ -448,7 +449,7 @@ ul.horizontal li {
 		}
 
 	#created-with {
-		font-size: 8pt;
+		font-size: 11px;
 		line-height: 22px;
 		}
 
