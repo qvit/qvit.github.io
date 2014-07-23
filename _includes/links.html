@@ -2,14 +2,11 @@
 	<div class="up"><a class="dashed" href="#top">▲ вверх</a></div>
 	<h1>Ссылки</h1>
 	<div class="contents">
-		<span class="tab" id="tab-profiles" title="Показать">
-			<span class="dashed">Я в Интернете</span>
-		</span>
-		<span class="tab" id="tab-recommendations" title="Показать">
-			<span class="dashed">Рекомендую</span>
+		<span class="tab active" id="tab-profiles" title="Показать">
+			<span>Я в Интернете</span>
 		</span>
 		<!--[if IE 8]><div></div><![endif]-->
-		<div class="tabbed" id="tabbed-profiles">
+		<div class="tabbed active" id="tabbed-profiles">
 			<a class="plain" href="http://vk.com/victor_smirnov" title="В Контакте" target="_blank">
 				<img src="/img/vk.png" alt="vk"/>
 			</a>
@@ -25,61 +22,6 @@
 			<a class="plain" href="http://www.facebook.com/v.a.smirnov" title="Facebook" target="_blank">
 				<img src="/img/facebook.png" alt="facebook"/>
 			</a>
-		</div>
-		<div class="tabbed" id="tabbed-recommendations">
-			<script type="text/javascript">
-				function showOverlay() {
-					$("#overlay").show();
-				}
-
-				function hideOverlay() {
-					$("#overlay").hide();
-				}
-
-				$(function () {
-
-					$(".caller").click(function (event) {
-						event.preventDefault();
-						showOverlay();
-						var self = $(this);
-						var popup_id = "#" + $.trim(self.attr("id")).split("-")[0] + "-popup";
-						$(popup_id).show();
-					});
-
-					$("#overlay, .close-popup").click(function () {
-						$(".popup").hide();
-						hideOverlay();
-					});
-				});
-			</script>
-			<a id="sugarsync-activator" class="caller plain" href="http://goo.gl/8Ykc0" title="Подробнее..." target="_blank">
-				<img src="/img/sugarsync26.png" alt="sugarsync"/>
-			</a>
-			<a id="cloud9-activator" class="caller plain" href="https://c9.io/" title="Подробнее..." target="_blank">
-				<img src="/img/c926.png" alt="cloud9"/>
-			</a>
-			<div id="sugarsync-popup" class="popup">
-				<img src="/img/close.png" class="close-popup" alt="close" title="Закрыть"/>
-				<img src="/img/sugarsync-logo.png" alt="SugarSync"/>
-				<p>
-					Бесплатный сервис для хранения и синхронизации файлов.
-					По <a href="http://goo.gl/8Ykc0" target="_blank">данной ссылке</a> при регистрации получите на 500 МБ больше места на облаке.
-				</p>
-				<p>
-					<a href="https://www.sugarsync.com/" target="_blank">Подробнее</a>
-				</p>
-			</div>
-			<div id="cloud9-popup" class="popup">
-				<img src="/img/close.png" class="close-popup" alt="close" title="Закрыть"/>
-				<img src="/img/cloud9-logo.png" alt="Cloud9 IDE"/>
-				<p>
-					Облачная IDE с широким функционалом.
-					Возможна привязка к аккаунтам на GitHub и Bitbucket.
-				</p>
-				<p>
-					<a href="https://c9.io/" target="_blank">Подробнее</a>
-				</p>
-			</div>
 		</div>
 	</div>
 </div>
