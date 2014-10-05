@@ -2,10 +2,9 @@ BEGIN:VCARD
 VERSION:2.1
 N:Смирнов;Виктор
 FN:Виктор Смирнов
-TITLE:Программист
-ORG:ООО "Редсолюшн"
-TEL;WORK:+7 351 750-50-04
-TEL;CELL:+7 964 243-89-14
+TITLE:Веб-разработчик
+ORG:220 вольт
+TEL;CELL:+7 951 251-24-12
 EMAIL:victor.smirnov@qvit.pro
-URL:http://qvit.pro
+URL:http://qvit.github.io
 END:VCARD
