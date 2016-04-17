@@ -1,142 +1,20 @@
 <!DOCTYPE html>
-<html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie9 lt-ie8">        <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie9">               <![endif]-->
+<html lang="ru">
+<!--[if lt IE 7]> <html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="ru" class="lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html lang="ru" class="lt-ie9">               <![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="description" content="Web-разработчик в ООО «Редсолюшн»">
+    <meta name="description" content="Web-разработчик в 220 вольт">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="/css/960.css">
-    <link rel="stylesheet" type="text/css" href="/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/960.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
     <title>{{ page.title }}</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script src="/js/jquery.smooth-scroll.js"></script>
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-34499096-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-    <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?96"></script>
-    <script type="text/javascript">
-      VK.init({apiId: 3707319, onlyWidgets: true});
-    </script>
-    <script type="text/javascript">
-      $(function() {
-        $('a:not(.title)').smoothScroll();
-
-        var minimized = 20;
-        var slideSpeed = 400;
-        var vcardShown = false;
-
-        function switchTitle(title) {
-          var subst = "▲ скрыть";
-          if ($(title).text().charAt(0) == '▼') {
-            $(title).data('original', $(title).text());
-            var new_title = subst;
-          }
-          else {
-            var original = $(title).data('original');
-            var new_title = original;
-          }
-          setTimeout(function() {
-            $(title).text(new_title);
-          }, slideSpeed);
-        }
-
-        $('.dropdown a.title').click(function() {
-          var self = this;
-          var contents = $(self).siblings('.contents');
-          contents.slideToggle(slideSpeed, switchTitle(self));
-        });
-
-        function activate(type, elem) {
-          $(elem).addClass('active').siblings('.' + type).removeClass('active');
-        }
-
-        function deUnderlineTab(tab) {
-          $(tab).children('span').removeClass('dashed');
-          $(tab).siblings('.tab').children('span').addClass('dashed');
-        }
-
-        function noTabbedIsActive(tab) {
-          return !Boolean($(tab).siblings('.tabbed').hasClass('active'));
-        }
-
-        $('.tab').click(function() {
-          deUnderlineTab(this);
-          activate('tab', this);
-          var tabbed = $("#tabbed-" + this.id.slice(4)),
-            first_activation = noTabbedIsActive(this);
-          if (first_activation) {
-            var new_height = $(this).parent().height() + tabbed.height();
-            $(this).parent().height(new_height);
-          }
-          activate('tabbed', tabbed);
-        });
-
-        $('.interval').click(function() {
-          $(this).hide();
-          $(this).siblings('.minimized').slideDown(slideSpeed);
-        });
-
-        function showVCardPanel(event) {
-          if (!vcardShown) {
-            $(event.currentTarget).find('.panel').animate({
-              bottom: 0
-            }, 300);
-          }
-        }
-
-        function hideVCardPanel(event) {
-          if (!vcardShown) {
-            var panel = $(event.currentTarget).find('.panel');
-            panel.animate({
-              bottom: -panel.height()
-            }, 300);
-          }
-        }
-
-        function showVCard() {
-          if (!vcardShown) {
-            $('#vcard').animate({
-              top: 0
-            }, 300);
-            hideVCardPanel({
-              currentTarget: $('#photo')[0]
-            });
-            vcardShown = true;
-          }
-        }
-
-        function hideVCard(event) {
-          if (!$('#photo').has(event.target).length && vcardShown) {
-            var vcard = $('#vcard');
-            vcard.animate({
-              top: vcard.height()
-            });
-            vcardShown = false;
-          }
-        }
-
-        $('#photo').mouseenter(showVCardPanel).mouseleave(hideVCardPanel);
-
-        $('.show-vcard').click(showVCard);
-        $('body').click(hideVCard);
-      });
+    <script src="//userapi.com/js/api/openapi.js?96"></script>
+    <script>
+        VK.init({apiId: 3707319, onlyWidgets: true});
     </script>
     <meta name="google-site-verification" content="YU0eZg0nP94sP7J9ywidrpjcAJ-i9UlbIlQ5WQ-tc-w" />
     <meta name='yandex-verification' content='405a528e49e8be92' />
@@ -154,20 +32,12 @@
         <div id="push"></div>
     </div>
     {% include footer.html %}
-    <script type="text/javascript">
-      // Google +1 button
-      window.___gcfg = { lang: 'ru' };
-      (function() {
-        var po = document.createElement('script');
-        po.type = 'text/javascript';
-        po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(po, s);
-      })();
-    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="/js/jquery.smooth-scroll.1.5.2.min.js"></script>
+    <script src="/js/main.min.js"></script>
+
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter4350271 = new Ya.Metrika({ id:4350271, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/4350271" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+    <noscript><div><img src="https://mc.yandex.ru/watch/4350271" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
 </body>
 </html>

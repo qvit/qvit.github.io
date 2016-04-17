@@ -15,7 +15,7 @@ img {
 	}
 
 h1, h2, h3 {
-	font-family: "Trebuchet MS", Arial, sans;
+	font-family: 'Trebuchet MS', Arial, sans;
 	font-weight: normal;
 	margin: 0;
 	}
@@ -85,22 +85,22 @@ a.hidden:hover {
 	}
 
 a.external {
-	background: url("../img/external-link16.png") left 2px no-repeat;
+	background: url('../img/external-link16.png') left 2px no-repeat;
 	padding-left: 22px;
 	}
 
 a.external.google-doc {
-	background-image: url("../img/google-doc16.png");
+	background-image: url('../img/google-doc16.png');
 	background-position: left 1px;
 	}
 
 a.external.google-sheet {
-	background-image: url("../img/google-sheet16.png");
+	background-image: url('../img/google-sheet16.png');
 	background-position: left 2px;
 	}
 
 a.download {
-	background: url("../img/download-link16.png") left center no-repeat;
+	background: url('../img/download-link16.png') left center no-repeat;
 	padding-left: 22px;
 	}
 
@@ -158,12 +158,12 @@ ul.horizontal li {
 	}
 
 .zip {
-	background: url("../img/zip16.png") left center no-repeat;
+	background: url('../img/zip16.png') left center no-repeat;
 	padding-left: 22px;
 	}
 
 .doc {
-	background: url("../img/doc16.png") left center no-repeat;
+	background: url('../img/doc16.png') left center no-repeat;
 	padding-left: 22px;
 	}
 
@@ -177,7 +177,7 @@ ul.horizontal li {
 	}
 
 .lt-ie9 #overlay {
-	background: url(../img/overlay-bg.png);
+	background: url('../img/overlay-bg.png');
 	}
 
 #header {
@@ -196,7 +196,7 @@ ul.horizontal li {
 			}
 
 	#title {
-		font-family: "Trebuchet MS", Arial, sans;
+		font-family: 'Trebuchet MS', Arial, sans;
 		font-size: 27px;
 		text-align: right;
 		}
@@ -240,7 +240,7 @@ ul.horizontal li {
 				}
 
 			.lt-ie9 #photo .panel {
-				background: url("../img/vcard-panel-bg.png");
+				background: url('../img/vcard-panel-bg.png');
 				}
 
 				#photo .show-vcard {
@@ -284,19 +284,19 @@ ul.horizontal li {
 				}
 
 			.job {
-				background-image: url("../img/job.png");
+				background-image: url('../img/job.png');
 				}
 
 			.study {
-				background-image: url("../img/study.png");
+				background-image: url('../img/study.png');
 				}
 
 			.email {
-				background-image: url("../img/email.png");
+				background-image: url('../img/email.png');
 				}
 
 			.github {
-				background-image: url("../img/github.png");
+				background-image: url('../img/github.png');
 				background-position: 3px center;
 				}
 
